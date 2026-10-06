@@ -1,0 +1,309 @@
+/* =========================
+   GENERAL PAGE SETTINGS
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fb;
+    color: #222;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+header {
+    background-color: white;
+    padding: 20px 8%;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+}
+
+.button.secondary {
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+}
+
+
+/* =========================
+   INTRODUCTION
+   ========================= */
+
+.introduction {
+    max-width: 800px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   OPTIONS
+   ========================= */
+
+.options {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.options h2 {
+    margin-bottom: 40px;
+}
+
+.option-card {
+    background-color: white;
+    padding: 30px;
+    margin: 15px;
+    display: inline-block;
+    width: 28%;
+    min-width: 250px;
+    vertical-align: top;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.option-card h3 {
+    margin-bottom: 15px;
+}
+
+.option-card p {
+    margin-bottom: 20px;
+}
+
+.option-card a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CRISIS SUPPORT
+   ========================= */
+
+.crisis-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.crisis-section h2 {
+    margin-bottom: 15px;
+}
+
+.crisis-section p {
+    margin-bottom: 20px;
+}
+
+.crisis-section a {
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   FIND HOPE PAGE
+   ========================= */
+
+.hope-introduction {
+    max-width: 800px;
+    margin: auto;
+    padding: 80px 20px 50px;
+    text-align: center;
+}
+
+.hope-introduction h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hope-introduction p {
+    font-size: 1.2rem;
+}
+
+
+/* =========================
+   REASONS
+   ========================= */
+
+.reasons {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.reasons h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+/* Individual reason cards */
+
+.reason-card {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 30%;
+    min-width: 260px;
+
+    margin: 15px;
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+
+/* Reason card heading */
+
+.reason-card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* Reason card paragraph */
+
+.reason-card p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HOPE ACTION
+   ========================= */
+
+.hope-action {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hope-action h2 {
+    margin-bottom: 15px;
+}
+
+.hope-action p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+
+/* =========================
+   SUPPORT SECTION
+   ========================= */
+
+.hope-support {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.hope-support h2 {
+    margin-bottom: 15px;
+}
+
+.hope-support p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}

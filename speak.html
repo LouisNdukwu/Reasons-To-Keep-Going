@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Speak Up | Reasons to Keep Going</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                Reasons to Keep Going
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hope.html">Find Hope</a></li>
+                <li><a href="speak.html">Speak Up</a></li>
+                <li><a href="support.html">Get Support</a></li>
+                <li><a href="help-someone.html">Help Someone</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Page introduction -->
+        <section class="speak-introduction">
+            <h1>You deserve to be heard.</h1>
+
+            <p>
+                You don't need perfect words to explain
+                what you're feeling. Start wherever you are.
+            </p>
+        </section>
+
+        <!-- Reflection prompts -->
+        <section class="reflection-section">
+
+            <h2>Take a moment for yourself</h2>
+
+            <p>
+                Choose a prompt to help you begin.
+                You can write as much or as little as you want.
+            </p>
+
+            <div class="prompt-list">
+                <button type="button"
+                        class="prompt-button"
+                        data-prompt="What has been weighing on my mind lately?">
+                    What has been weighing on your mind lately?
+                </button>
+
+                <button type="button"
+                        class="prompt-button"
+                        data-prompt="What do I wish someone understood about me right now?">
+                    What do I wish someone understood?
+                </button>
+
+                <button type="button"
+                        class="prompt-button"
+                        data-prompt="What is one thing I need help with today?">
+                    What do I need help with?
+                </button>
+
+                <button type="button"
+                        class="prompt-button"
+                        data-prompt="Who is one person I might feel safe talking to?">
+                    Who could I talk to?
+                </button>
+            </div>
+
+            <!-- Writing area -->
+            <div class="reflection-box">
+
+                <label for="reflection">
+                    Your thoughts
+                </label>
+
+                <p id="privacy-note">
+                    Your writing is not sent or saved by this
+                    page. Avoid entering identifying or sensitive
+                    information on a shared device.
+                </p>
+
+                <textarea
+                    id="reflection"
+                    rows="8"
+                    placeholder="Start writing whenever you're ready..."
+                    aria-describedby="privacy-note"></textarea>
+
+                <div class="reflection-actions">
+                    <button type="button"
+                            id="clear-button"
+                            class="button secondary">
+                        Clear writing
+                    </button>
+                </div>
+
+                <p id="reflection-status"
+                   role="status"
+                   aria-live="polite"></p>
+
+            </div>
+        </section>
+
+        <!-- Next steps -->
+        <section class="speak-next">
+            <h2>You don't have to figure it out alone.</h2>
+
+            <p>
+                Writing can help you organize your thoughts,
+                but you deserve support from real people, too.
+            </p>
+
+            <a href="support.html" class="button">
+                Find Support
+            </a>
+
+            <a href="hope.html" class="button secondary">
+                Find Hope
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Reasons to Keep Going</p>
+        <p>
+            This website is an educational project and does
+            not replace professional mental-health care.
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

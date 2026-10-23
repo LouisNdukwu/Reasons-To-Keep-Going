@@ -307,3 +307,226 @@ footer p {
     max-width: 650px;
     margin: 0 auto 25px;
 }
+
+/* =========================
+   SPEAK UP PAGE
+   ========================= */
+
+.speak-introduction {
+    max-width: 800px;
+    margin: auto;
+    padding: 80px 20px 40px;
+    text-align: center;
+}
+
+.speak-introduction h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.speak-introduction p {
+    font-size: 1.2rem;
+}
+
+.reflection-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px 70px;
+}
+
+.reflection-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.reflection-section > p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.prompt-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.prompt-button {
+    padding: 14px 18px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.prompt-button:hover,
+.prompt-button:focus-visible {
+    border-color: #555;
+    background-color: #f0f0f0;
+}
+
+.reflection-box {
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.reflection-box label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#privacy-note {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#reflection {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font: inherit;
+    line-height: 1.6;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+#reflection:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+
+.reflection-actions {
+    margin-top: 15px;
+}
+
+#reflection-status {
+    margin-top: 12px;
+    font-size: 0.9rem;
+}
+
+.speak-next {
+    padding: 65px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.speak-next h2 {
+    margin-bottom: 15px;
+}
+
+.speak-next p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .speak-introduction h1 {
+        font-size: 2.2rem;
+    }
+
+    .reflection-box {
+        padding: 20px;
+    }
+}
+
+
+
+/* =========================
+   GET SUPPORT PAGE
+   ========================= */
+
+.support-introduction {
+    max-width: 850px;
+    margin: auto;
+    padding: 80px 20px 50px;
+    text-align: center;
+}
+
+.support-introduction h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.support-introduction p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.support-options {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px 70px;
+}
+
+.support-options > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.support-card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: white;
+    line-height: 1.7;
+}
+
+.support-card h3 {
+    margin-bottom: 15px;
+}
+
+.support-card a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.support-reminder {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.support-reminder h2 {
+    margin-bottom: 15px;
+}
+
+.support-reminder p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .support-introduction h1 {
+        font-size: 2.2rem;
+    }
+}

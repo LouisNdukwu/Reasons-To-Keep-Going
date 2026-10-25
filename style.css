@@ -530,3 +530,179 @@ footer p {
         font-size: 2.2rem;
     }
 }
+
+
+/* =========================
+   INTERACTIVE SUPPORT CHECK-IN
+   ========================= */
+
+.support-checkin {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.support-checkin h2 {
+    margin-bottom: 15px;
+}
+
+.support-checkin p {
+    line-height: 1.7;
+}
+
+.support-checkin label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: bold;
+}
+
+#support-choice {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    font: inherit;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    background-color: white;
+}
+
+#support-checkin-button {
+    cursor: pointer;
+    font: inherit;
+}
+
+#support-feedback {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+#support-feedback:empty {
+    display: none;
+}
+
+#support-feedback:not(:empty) {
+    background-color: #f0f0f0;
+}
+
+#support-feedback a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+    .support-checkin {
+        margin: 25px 15px;
+        padding: 20px;
+    }
+}
+
+
+
+/* =========================
+   HELP SOMEONE PAGE
+   ========================= */
+
+.help-hero {
+    max-width: 850px;
+    margin: auto;
+    padding: 80px 20px 60px;
+    text-align: center;
+}
+
+.help-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.help-hero p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.help-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 20px 70px;
+}
+
+.help-section > h2,
+.warning-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.help-card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.help-card h3 {
+    margin-bottom: 12px;
+}
+
+.help-card p,
+.warning-section p,
+.help-closing p {
+    line-height: 1.8;
+}
+
+.help-source {
+    margin-top: 25px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.warning-section {
+    padding: 55px 20px;
+    background-color: #f1eeee;
+}
+
+.warning-section > p {
+    max-width: 800px;
+    margin: 0 auto 18px;
+}
+
+.warning-section .button {
+    display: table;
+    margin: 25px auto 0;
+}
+
+.help-closing {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.help-closing h2 {
+    margin-bottom: 15px;
+}
+
+.help-closing p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+@media (max-width: 700px) {
+    .help-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .help-grid {
+        grid-template-columns: 1fr;
+    }
+}

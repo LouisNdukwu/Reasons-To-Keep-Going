@@ -91,6 +91,32 @@
             <a href="hope.html" class="button">Find Hope</a>
             <a href="speak.html" class="button secondary">Speak Up</a>
         </section>
+
+        <!-- Interactive support check-in -->
+        <section class="support-checkin">
+            <h2>Find your next step</h2>
+
+            <p>
+                You don't have to explain everything.
+                Choose the option that best describes what you need right now.
+            </p>
+
+            <label for="support-choice">What kind of support do you need?</label>
+
+            <select id="support-choice">
+                <option value="">Choose an option...</option>
+                <option value="urgent">I may be in crisis or need help right now.</option>
+                <option value="overwhelmed">I'm feeling overwhelmed.</option>
+                <option value="talk">I want to talk to someone.</option>
+                <option value="unsure">I'm not sure what I need.</option>
+            </select>
+
+            <button type="button" id="support-checkin-button" class="button">
+                Show my next step
+            </button>
+
+            <div id="support-feedback" role="status" aria-live="polite"></div>
+        </section>
     </main>
 
     <footer>
@@ -100,5 +126,6 @@
             replace professional mental-health care.
         </p>
     </footer>
+    <script src="support.js"></script>
 </body>
 </html>

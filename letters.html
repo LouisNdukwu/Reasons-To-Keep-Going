@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letters of Hope | Reasons to Keep Going</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Reasons to Keep Going</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hope.html">Find Hope</a></li>
+                <li><a href="speak.html">Speak Up</a></li>
+                <li><a href="support.html">Get Support</a></li>
+                <li><a href="help-someone.html">Help Someone</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="letters-hero">
+            <h1>Letters of Hope</h1>
+            <p>
+                Sometimes a few kind words from someone you have never met
+                can remind you that you are not alone.
+            </p>
+            <a href="#letter-library" class="button">Read a Letter</a>
+            <a href="#write-letter" class="button secondary">Write a Letter</a>
+        </section>
+
+        <section class="letter-library" id="letter-library">
+            <h2>A little encouragement for today</h2>
+            <p>
+                These are example letters created for this website prototype.
+                They are not submissions from real users.
+            </p>
+
+            <label for="letter-filter">Choose a theme</label>
+            <select id="letter-filter">
+                <option value="all">All letters</option>
+                <option value="hope">Hope</option>
+                <option value="loneliness">Feeling alone</option>
+                <option value="strength">Strength</option>
+            </select>
+
+            <div class="letter-grid" id="letter-grid">
+                <article class="letter-card" data-theme="hope">
+                    <p class="letter-theme">A little hope</p>
+                    <h3>Dear person having a hard day,</h3>
+                    <p>
+                        You do not need to have your whole life figured out
+                        today. Give yourself permission to take things one
+                        step at a time. A difficult chapter is not the whole
+                        story, and you deserve the chance to see what comes next.
+                    </p>
+                    <p class="letter-signature">From, someone rooting for you</p>
+                </article>
+
+                <article class="letter-card" data-theme="loneliness">
+                    <p class="letter-theme">You are not alone</p>
+                    <h3>To whoever needs to hear this,</h3>
+                    <p>
+                        Feeling alone can make it seem as though nobody
+                        understands. Your feelings still matter. You deserve
+                        people who listen, care, and make room for you.
+                        Reaching out to one safe person can be a beginning.
+                    </p>
+                    <p class="letter-signature">From, a fellow human</p>
+                </article>
+
+                <article class="letter-card" data-theme="strength">
+                    <p class="letter-theme">Quiet strength</p>
+                    <h3>Dear friend,</h3>
+                    <p>
+                        Strength is not always looking confident or having
+                        everything under control. Sometimes it is getting
+                        through today, admitting that things are hard, or
+                        allowing someone to help you. Those things count too.
+                    </p>
+                    <p class="letter-signature">From, someone who believes in you</p>
+                </article>
+            </div>
+
+            <p id="filter-feedback" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="write-letter" id="write-letter">
+            <h2>Write a letter for someone</h2>
+            <p>
+                Write something kind that another person might need to hear.
+                In this prototype, your draft stays in this page and is not
+                submitted or published.
+            </p>
+
+            <form id="letter-form">
+                <label for="letter-title">Letter title</label>
+                <input
+                    type="text"
+                    id="letter-title"
+                    maxlength="80"
+                    placeholder="A reminder for a difficult day"
+                    required>
+
+                <label for="letter-theme">Choose a theme</label>
+                <select id="letter-theme" required>
+                    <option value="">Choose a theme...</option>
+                    <option value="hope">Hope</option>
+                    <option value="loneliness">Feeling alone</option>
+                    <option value="strength">Strength</option>
+                </select>
+
+                <label for="letter-message">Your letter</label>
+                <textarea
+                    id="letter-message"
+                    rows="8"
+                    maxlength="1500"
+                    placeholder="Write an encouraging message..."
+                    required></textarea>
+
+                <p class="letter-privacy">
+                    Do not include names, addresses, contact details, private
+                    information, or graphic descriptions of self-harm or suicide.
+                    Do not include requests for direct contact.
+                </p>
+
+                <button type="submit" class="button">Preview My Letter</button>
+                <button type="reset" class="button secondary">Clear Draft</button>
+            </form>
+
+            <div id="letter-preview" class="letter-preview" hidden>
+                <h3>Your letter preview</h3>
+                <p id="preview-theme" class="letter-theme"></p>
+                <h4 id="preview-title"></h4>
+                <p id="preview-message"></p>
+                <p class="letter-signature">From, an anonymous writer</p>
+                <p id="draft-feedback" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="letters-safety">
+            <h2>Kindness needs care, too</h2>
+            <p>
+                A future public version of Letters of Hope will require
+                moderation before submitted letters can appear in the library.
+                This prototype does not accept or publish public submissions.
+            </p>
+            <a href="support.html" class="button">Find Support</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Reasons to Keep Going</p>
+        <p>
+            This website is an educational project and does not replace
+            professional mental-health care.
+        </p>
+    </footer>
+
+    <script src="supabase-config.js"></script>
+    <script src="letters.js"></script>
+</body>
+</html>
